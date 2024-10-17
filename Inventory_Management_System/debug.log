@@ -1,0 +1,362 @@
+INFO 2024-10-17 19:33:23,371 autoreload Watching for file changes with StatReloader
+INFO 2024-10-17 19:33:23,842 autoreload Watching for file changes with StatReloader
+WARNING 2024-10-17 19:33:31,779 log Method Not Allowed: /api/inventory/login/
+WARNING 2024-10-17 19:33:31,780 basehttp "GET /api/inventory/login/ HTTP/1.1" 405 7561
+INFO 2024-10-17 19:33:41,446 basehttp "POST /api/inventory/login/ HTTP/1.1" 200 8005
+INFO 2024-10-17 19:34:00,893 inventory_item Retrieved inventory item from cache: Item4
+INFO 2024-10-17 19:34:00,896 basehttp "GET /api/inventory/items/4/ HTTP/1.1" 200 71
+ERROR 2024-10-17 19:34:24,513 log Internal Server Error: /api/inventory/items/4/delete
+Traceback (most recent call last):
+  File "C:\Users\Shyam\Downloads\Django project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Shyam\Downloads\Django project\venv\Lib\site-packages\django\utils\deprecation.py", line 131, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Shyam\Downloads\Django project\venv\Lib\site-packages\django\middleware\common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Shyam\Downloads\Django project\venv\Lib\site-packages\django\middleware\common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via DELETE, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining DELETE data. Change your form to point to 127.0.0.1:8000/api/inventory/items/4/delete/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2024-10-17 19:34:24,526 basehttp "DELETE /api/inventory/items/4/delete HTTP/1.1" 500 68799
+INFO 2024-10-17 19:34:28,871 inventory_item Deleted inventory item: Item4
+INFO 2024-10-17 19:34:28,872 basehttp "DELETE /api/inventory/items/4/delete/ HTTP/1.1" 204 0
+INFO 2024-10-17 19:34:47,361 inventory_item Retrieved inventory item from cache: Item4
+INFO 2024-10-17 19:34:47,363 basehttp "GET /api/inventory/items/4/ HTTP/1.1" 200 71
+INFO 2024-10-17 19:34:53,550 inventory_item Retrieved inventory item from cache: Item4
+INFO 2024-10-17 19:34:53,552 basehttp "GET /api/inventory/items/4/ HTTP/1.1" 200 71
+INFO 2024-10-17 19:34:56,228 inventory_item Retrieved inventory item from cache: Item4
+INFO 2024-10-17 19:34:56,230 basehttp "GET /api/inventory/items/4/ HTTP/1.1" 200 71
+INFO 2024-10-17 19:35:00,670 inventory_item Retrieved inventory item from cache: Item4
+INFO 2024-10-17 19:35:00,672 basehttp "GET /api/inventory/items/4/ HTTP/1.1" 200 71
+INFO 2024-10-17 19:35:04,956 inventory_item Retrieved inventory item: item4
+INFO 2024-10-17 19:35:04,959 basehttp "GET /api/inventory/items/5/ HTTP/1.1" 200 72
+INFO 2024-10-17 19:35:09,184 inventory_item Retrieved inventory item: Item3
+INFO 2024-10-17 19:35:09,186 basehttp "GET /api/inventory/items/3/ HTTP/1.1" 200 71
+INFO 2024-10-17 19:35:22,355 inventory_item Deleted inventory item: Item3
+INFO 2024-10-17 19:35:22,356 basehttp "DELETE /api/inventory/items/3/delete/ HTTP/1.1" 204 0
+INFO 2024-10-17 19:35:34,507 inventory_item Retrieved inventory item from cache: Item3
+INFO 2024-10-17 19:35:34,510 basehttp "GET /api/inventory/items/3/ HTTP/1.1" 200 71
+INFO 2024-10-17 19:36:03,928 autoreload D:\Django project\Inventory_Management_System\inventory_system\views\inventory_item.py changed, reloading.
+INFO 2024-10-17 19:36:04,502 autoreload D:\Django project\Inventory_Management_System\inventory_system\views\inventory_item.py changed, reloading.
+INFO 2024-10-17 19:36:04,805 autoreload Watching for file changes with StatReloader
+INFO 2024-10-17 19:36:05,422 autoreload Watching for file changes with StatReloader
+INFO 2024-10-17 19:36:10,861 basehttp "GET /admin/ HTTP/1.1" 200 6826
+INFO 2024-10-17 19:36:10,889 basehttp "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2024-10-17 19:36:10,891 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2024-10-17 19:36:10,891 basehttp "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2024-10-17 19:36:10,894 basehttp "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+INFO 2024-10-17 19:36:10,895 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2024-10-17 19:36:10,897 basehttp "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2024-10-17 19:36:10,899 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO 2024-10-17 19:36:10,907 basehttp "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+INFO 2024-10-17 19:36:10,907 basehttp "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+INFO 2024-10-17 19:36:12,721 basehttp "GET /admin/inventory_system/inventoryitem/ HTTP/1.1" 200 10422
+INFO 2024-10-17 19:36:12,752 basehttp "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+INFO 2024-10-17 19:36:12,767 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+INFO 2024-10-17 19:36:12,767 basehttp "GET /static/admin/js/core.js HTTP/1.1" 304 0
+INFO 2024-10-17 19:36:12,769 basehttp "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+INFO 2024-10-17 19:36:12,770 basehttp "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+INFO 2024-10-17 19:36:12,770 basehttp "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+INFO 2024-10-17 19:36:12,772 basehttp "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+INFO 2024-10-17 19:36:12,773 basehttp "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+INFO 2024-10-17 19:36:12,773 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+INFO 2024-10-17 19:36:12,787 basehttp "GET /static/admin/js/filters.js HTTP/1.1" 304 0
+INFO 2024-10-17 19:36:12,911 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-10-17 19:36:12,940 basehttp "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+INFO 2024-10-17 19:36:32,486 inventory_item Retrieved inventory item from cache: Item3
+INFO 2024-10-17 19:36:32,488 basehttp "GET /api/inventory/items/3/ HTTP/1.1" 200 71
+INFO 2024-10-17 19:36:33,491 inventory_item Retrieved inventory item from cache: Item3
+INFO 2024-10-17 19:36:33,492 basehttp "GET /api/inventory/items/3/ HTTP/1.1" 200 71
+INFO 2024-10-17 19:36:34,412 inventory_item Retrieved inventory item from cache: Item3
+INFO 2024-10-17 19:36:34,414 basehttp "GET /api/inventory/items/3/ HTTP/1.1" 200 71
+INFO 2024-10-17 19:37:19,318 autoreload D:\Django project\Inventory_Management_System\inventory_system\views\inventory_item.py changed, reloading.
+INFO 2024-10-17 19:37:19,334 autoreload D:\Django project\Inventory_Management_System\inventory_system\views\inventory_item.py changed, reloading.
+INFO 2024-10-17 19:37:20,284 autoreload Watching for file changes with StatReloader
+INFO 2024-10-17 19:37:20,357 autoreload Watching for file changes with StatReloader
+INFO 2024-10-17 19:38:57,338 autoreload D:\Django project\Inventory_Management_System\inventory_system\views\inventory_item.py changed, reloading.
+INFO 2024-10-17 19:38:57,346 autoreload D:\Django project\Inventory_Management_System\inventory_system\views\inventory_item.py changed, reloading.
+INFO 2024-10-17 19:38:58,160 autoreload Watching for file changes with StatReloader
+INFO 2024-10-17 19:38:58,183 autoreload Watching for file changes with StatReloader
+WARNING 2024-10-17 19:38:59,396 log Unauthorized: /api/inventory/items/3/
+WARNING 2024-10-17 19:38:59,397 basehttp "GET /api/inventory/items/3/ HTTP/1.1" 401 183
+WARNING 2024-10-17 19:39:05,285 log Method Not Allowed: /api/inventory/login/
+WARNING 2024-10-17 19:39:05,285 basehttp "GET /api/inventory/login/ HTTP/1.1" 405 7561
+INFO 2024-10-17 19:39:14,418 basehttp "POST /api/inventory/login/ HTTP/1.1" 200 8005
+INFO 2024-10-17 19:39:32,277 inventory_item Retrieved inventory item from cache: Item3
+INFO 2024-10-17 19:39:32,280 basehttp "GET /api/inventory/items/3/ HTTP/1.1" 200 71
+INFO 2024-10-17 19:39:33,317 inventory_item Retrieved inventory item from cache: Item3
+INFO 2024-10-17 19:39:33,320 basehttp "GET /api/inventory/items/3/ HTTP/1.1" 200 71
+INFO 2024-10-17 19:39:34,239 inventory_item Retrieved inventory item from cache: Item3
+INFO 2024-10-17 19:39:34,241 basehttp "GET /api/inventory/items/3/ HTTP/1.1" 200 71
+INFO 2024-10-17 19:39:35,238 inventory_item Retrieved inventory item from cache: Item3
+INFO 2024-10-17 19:39:35,240 basehttp "GET /api/inventory/items/3/ HTTP/1.1" 200 71
+INFO 2024-10-17 19:39:36,675 inventory_item Retrieved inventory item from cache: Item3
+INFO 2024-10-17 19:39:36,677 basehttp "GET /api/inventory/items/3/ HTTP/1.1" 200 71
+INFO 2024-10-17 19:39:37,409 inventory_item Retrieved inventory item from cache: Item3
+INFO 2024-10-17 19:39:37,412 basehttp "GET /api/inventory/items/3/ HTTP/1.1" 200 71
+INFO 2024-10-17 19:39:37,775 inventory_item Retrieved inventory item from cache: Item3
+INFO 2024-10-17 19:39:37,778 basehttp "GET /api/inventory/items/3/ HTTP/1.1" 200 71
+INFO 2024-10-17 19:39:37,957 inventory_item Retrieved inventory item from cache: Item3
+INFO 2024-10-17 19:39:37,958 basehttp "GET /api/inventory/items/3/ HTTP/1.1" 200 71
+INFO 2024-10-17 19:39:38,138 inventory_item Retrieved inventory item from cache: Item3
+INFO 2024-10-17 19:39:38,141 basehttp "GET /api/inventory/items/3/ HTTP/1.1" 200 71
+INFO 2024-10-17 19:39:38,327 inventory_item Retrieved inventory item from cache: Item3
+INFO 2024-10-17 19:39:38,329 basehttp "GET /api/inventory/items/3/ HTTP/1.1" 200 71
+INFO 2024-10-17 19:39:38,503 inventory_item Retrieved inventory item from cache: Item3
+INFO 2024-10-17 19:39:38,505 basehttp "GET /api/inventory/items/3/ HTTP/1.1" 200 71
+INFO 2024-10-17 19:39:38,814 inventory_item Retrieved inventory item from cache: Item3
+INFO 2024-10-17 19:39:38,816 basehttp "GET /api/inventory/items/3/ HTTP/1.1" 200 71
+INFO 2024-10-17 19:42:06,703 autoreload D:\Django project\Inventory_Management_System\inventory_system\views\inventory_item.py changed, reloading.
+INFO 2024-10-17 19:42:06,717 autoreload D:\Django project\Inventory_Management_System\inventory_system\views\inventory_item.py changed, reloading.
+INFO 2024-10-17 19:42:07,524 autoreload Watching for file changes with StatReloader
+INFO 2024-10-17 19:42:07,558 autoreload Watching for file changes with StatReloader
+INFO 2024-10-17 19:43:07,756 basehttp "GET /admin/inventory_system/inventoryitem/ HTTP/1.1" 200 10422
+INFO 2024-10-17 19:43:07,905 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-10-17 19:43:15,829 basehttp "POST /admin/inventory_system/inventoryitem/ HTTP/1.1" 200 8713
+INFO 2024-10-17 19:43:15,928 basehttp "GET /static/admin/js/cancel.js HTTP/1.1" 200 884
+INFO 2024-10-17 19:43:17,344 basehttp "POST /admin/inventory_system/inventoryitem/ HTTP/1.1" 302 0
+INFO 2024-10-17 19:43:17,478 basehttp "GET /admin/inventory_system/inventoryitem/ HTTP/1.1" 200 8156
+INFO 2024-10-17 19:43:17,637 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-10-17 19:43:17,662 basehttp "GET /static/admin/img/icon-yes.svg HTTP/1.1" 304 0
+WARNING 2024-10-17 19:43:28,595 log Method Not Allowed: /api/inventory/login/
+WARNING 2024-10-17 19:43:28,595 basehttp "GET /api/inventory/login/ HTTP/1.1" 405 7561
+INFO 2024-10-17 19:43:39,095 basehttp "POST /api/inventory/login/ HTTP/1.1" 200 8005
+INFO 2024-10-17 19:44:09,198 inventory_item Created inventory item: Item1
+INFO 2024-10-17 19:44:09,199 basehttp "POST /api/inventory/items/ HTTP/1.1" 201 71
+INFO 2024-10-17 19:44:22,878 inventory_item Created inventory item: Item2
+INFO 2024-10-17 19:44:22,880 basehttp "POST /api/inventory/items/ HTTP/1.1" 201 72
+INFO 2024-10-17 19:44:31,563 inventory_item Created inventory item: Item3
+INFO 2024-10-17 19:44:31,564 basehttp "POST /api/inventory/items/ HTTP/1.1" 201 72
+INFO 2024-10-17 19:44:41,780 inventory_item Created inventory item: Item4
+INFO 2024-10-17 19:44:41,782 basehttp "POST /api/inventory/items/ HTTP/1.1" 201 72
+WARNING 2024-10-17 19:44:55,827 log Method Not Allowed: /api/inventory/items/10/
+WARNING 2024-10-17 19:44:55,827 basehttp "POST /api/inventory/items/10/ HTTP/1.1" 405 41
+INFO 2024-10-17 19:45:00,975 inventory_item Retrieved inventory item from cache: Item2
+INFO 2024-10-17 19:45:00,977 basehttp "GET /api/inventory/items/10/ HTTP/1.1" 200 72
+INFO 2024-10-17 19:45:20,706 inventory_item Deleted inventory item: Item2
+INFO 2024-10-17 19:45:20,707 basehttp "DELETE /api/inventory/items/10/delete/ HTTP/1.1" 204 0
+INFO 2024-10-17 19:45:31,527 inventory_item Retrieved inventory item from cache: Item2
+INFO 2024-10-17 19:45:31,529 basehttp "GET /api/inventory/items/10/ HTTP/1.1" 200 72
+INFO 2024-10-17 19:45:32,718 inventory_item Retrieved inventory item from cache: Item2
+INFO 2024-10-17 19:45:32,719 basehttp "GET /api/inventory/items/10/ HTTP/1.1" 200 72
+INFO 2024-10-17 19:45:33,588 inventory_item Retrieved inventory item from cache: Item2
+INFO 2024-10-17 19:45:33,590 basehttp "GET /api/inventory/items/10/ HTTP/1.1" 200 72
+INFO 2024-10-17 19:45:34,258 inventory_item Retrieved inventory item from cache: Item2
+INFO 2024-10-17 19:45:34,261 basehttp "GET /api/inventory/items/10/ HTTP/1.1" 200 72
+INFO 2024-10-17 19:45:34,914 inventory_item Retrieved inventory item from cache: Item2
+INFO 2024-10-17 19:45:34,916 basehttp "GET /api/inventory/items/10/ HTTP/1.1" 200 72
+INFO 2024-10-17 19:45:35,596 inventory_item Retrieved inventory item from cache: Item2
+INFO 2024-10-17 19:45:35,599 basehttp "GET /api/inventory/items/10/ HTTP/1.1" 200 72
+INFO 2024-10-17 19:45:43,860 basehttp "GET /admin/inventory_system/inventoryitem/ HTTP/1.1" 200 9874
+INFO 2024-10-17 19:45:44,022 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-10-17 19:46:17,142 autoreload D:\Django project\Inventory_Management_System\inventory_system\views\inventory_item.py changed, reloading.
+INFO 2024-10-17 19:46:17,955 autoreload Watching for file changes with StatReloader
+INFO 2024-10-17 19:46:18,417 autoreload Watching for file changes with StatReloader
+INFO 2024-10-17 19:48:02,551 autoreload D:\Django project\Inventory_Management_System\inventory_system\views\inventory_item.py changed, reloading.
+INFO 2024-10-17 19:48:03,355 autoreload D:\Django project\Inventory_Management_System\inventory_system\views\inventory_item.py changed, reloading.
+INFO 2024-10-17 19:48:03,896 autoreload Watching for file changes with StatReloader
+INFO 2024-10-17 19:48:04,271 autoreload Watching for file changes with StatReloader
+INFO 2024-10-17 19:48:16,536 inventory_item Retrieved inventory item from cache: Item2
+INFO 2024-10-17 19:48:16,539 basehttp "GET /api/inventory/items/10/ HTTP/1.1" 200 72
+INFO 2024-10-17 19:48:18,224 inventory_item Retrieved inventory item from cache: Item2
+INFO 2024-10-17 19:48:18,226 basehttp "GET /api/inventory/items/10/ HTTP/1.1" 200 72
+ERROR 2024-10-17 19:48:39,878 log Internal Server Error: /api/inventory/items/11/delete
+Traceback (most recent call last):
+  File "C:\Users\Shyam\Downloads\Django project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Shyam\Downloads\Django project\venv\Lib\site-packages\django\utils\deprecation.py", line 131, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Shyam\Downloads\Django project\venv\Lib\site-packages\django\middleware\common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Shyam\Downloads\Django project\venv\Lib\site-packages\django\middleware\common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via DELETE, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining DELETE data. Change your form to point to 127.0.0.1:8000/api/inventory/items/11/delete/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2024-10-17 19:48:39,878 basehttp "DELETE /api/inventory/items/11/delete HTTP/1.1" 500 68815
+WARNING 2024-10-17 19:48:56,060 log Unauthorized: /api/inventory/items/11/delete/
+WARNING 2024-10-17 19:48:56,060 basehttp "DELETE /api/inventory/items/11/delete/ HTTP/1.1" 401 183
+WARNING 2024-10-17 19:49:03,262 log Method Not Allowed: /api/inventory/login/
+WARNING 2024-10-17 19:49:03,264 basehttp "GET /api/inventory/login/ HTTP/1.1" 405 7561
+INFO 2024-10-17 19:49:03,289 basehttp "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+INFO 2024-10-17 19:49:03,292 basehttp "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+INFO 2024-10-17 19:49:03,295 basehttp "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+INFO 2024-10-17 19:49:03,295 basehttp "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+INFO 2024-10-17 19:49:03,300 basehttp "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+INFO 2024-10-17 19:49:03,301 basehttp "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+INFO 2024-10-17 19:49:03,302 basehttp "GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 304 0
+INFO 2024-10-17 19:49:03,306 basehttp "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+INFO 2024-10-17 19:49:03,308 basehttp "GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 304 0
+INFO 2024-10-17 19:49:03,311 basehttp "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+INFO 2024-10-17 19:49:03,312 basehttp "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+INFO 2024-10-17 19:49:14,021 basehttp "POST /api/inventory/login/ HTTP/1.1" 200 8005
+INFO 2024-10-17 19:50:49,010 inventory_item Deleted inventory item: Item3
+INFO 2024-10-17 19:51:29,492 autoreload Watching for file changes with StatReloader
+WARNING 2024-10-17 19:51:38,722 log Not Found: /api/inventory/items/11/
+WARNING 2024-10-17 19:51:38,722 basehttp "GET /api/inventory/items/11/ HTTP/1.1" 404 54
+INFO 2024-10-17 19:52:03,467 autoreload D:\Django project\Inventory_Management_System\inventory_system\views\inventory_item.py changed, reloading.
+INFO 2024-10-17 19:52:04,357 autoreload Watching for file changes with StatReloader
+WARNING 2024-10-17 19:52:14,970 log Not Found: /api/inventory/items/11/delete/
+WARNING 2024-10-17 19:52:14,970 basehttp "DELETE /api/inventory/items/11/delete/ HTTP/1.1" 404 54
+INFO 2024-10-17 19:52:19,921 inventory_item Deleted inventory item: Item4
+INFO 2024-10-17 19:52:19,922 basehttp "DELETE /api/inventory/items/12/delete/ HTTP/1.1" 204 0
+WARNING 2024-10-17 19:52:27,464 log Not Found: /api/inventory/items/12/
+WARNING 2024-10-17 19:52:27,465 basehttp "GET /api/inventory/items/12/ HTTP/1.1" 404 54
+INFO 2024-10-17 19:53:20,467 autoreload D:\Django project\Inventory_Management_System\inventory_system\views\inventory_item.py changed, reloading.
+INFO 2024-10-17 19:53:21,401 autoreload Watching for file changes with StatReloader
+WARNING 2024-10-17 20:24:49,825 log Not Found: /items/
+WARNING 2024-10-17 20:24:49,825 log Not Found: /items/2/delete/
+WARNING 2024-10-17 20:24:49,840 log Not Found: /items/19/
+WARNING 2024-10-17 20:24:49,840 log Not Found: /items/4/
+WARNING 2024-10-17 20:24:49,840 log Not Found: /items/5/update/
+WARNING 2024-10-17 20:25:10,715 log Not Found: /items/
+WARNING 2024-10-17 20:25:10,723 log Not Found: /items/2/delete/
+WARNING 2024-10-17 20:25:10,723 log Not Found: /items/19/
+WARNING 2024-10-17 20:25:10,731 log Not Found: /items/4/
+WARNING 2024-10-17 20:25:10,731 log Not Found: /items/5/update/
+WARNING 2024-10-17 20:25:48,075 log Not Found: /items/
+WARNING 2024-10-17 20:25:48,075 log Not Found: /items/2/delete/
+WARNING 2024-10-17 20:25:48,090 log Not Found: /items/19/
+WARNING 2024-10-17 20:25:48,090 log Not Found: /items/4/
+WARNING 2024-10-17 20:25:48,090 log Not Found: /items/5/update/
+WARNING 2024-10-17 20:30:11,151 log Method Not Allowed: /api/inventory/login/
+WARNING 2024-10-17 20:30:11,152 basehttp "GET /api/inventory/login/ HTTP/1.1" 405 7561
+INFO 2024-10-17 20:30:11,172 basehttp "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+INFO 2024-10-17 20:30:11,172 basehttp "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+INFO 2024-10-17 20:30:11,173 basehttp "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+INFO 2024-10-17 20:30:11,178 basehttp "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+INFO 2024-10-17 20:30:11,180 basehttp "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+INFO 2024-10-17 20:30:11,180 basehttp "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+INFO 2024-10-17 20:30:11,182 basehttp "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+INFO 2024-10-17 20:30:11,182 basehttp "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+INFO 2024-10-17 20:30:11,184 basehttp "GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 304 0
+INFO 2024-10-17 20:30:11,184 basehttp "GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 304 0
+INFO 2024-10-17 20:30:11,185 basehttp "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+INFO 2024-10-17 20:30:11,199 basehttp "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+INFO 2024-10-17 20:30:19,769 basehttp "POST /api/inventory/login/ HTTP/1.1" 200 8005
+INFO 2024-10-17 20:30:44,703 basehttp "GET /api/inventory/items/14/update HTTP/1.1" 301 0
+WARNING 2024-10-17 20:30:44,823 log Method Not Allowed: /api/inventory/items/14/update/
+WARNING 2024-10-17 20:30:44,823 basehttp "GET /api/inventory/items/14/update/ HTTP/1.1" 405 40
+ERROR 2024-10-17 20:30:49,921 log Internal Server Error: /api/inventory/items/14/update
+Traceback (most recent call last):
+  File "C:\Users\Shyam\Downloads\Django project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Shyam\Downloads\Django project\venv\Lib\site-packages\django\utils\deprecation.py", line 131, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Shyam\Downloads\Django project\venv\Lib\site-packages\django\middleware\common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Shyam\Downloads\Django project\venv\Lib\site-packages\django\middleware\common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via PATCH, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining PATCH data. Change your form to point to 127.0.0.1:8000/api/inventory/items/14/update/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2024-10-17 20:30:49,936 basehttp "PATCH /api/inventory/items/14/update HTTP/1.1" 500 68800
+ERROR 2024-10-17 20:30:55,990 log Internal Server Error: /api/inventory/items/14/update
+Traceback (most recent call last):
+  File "C:\Users\Shyam\Downloads\Django project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Shyam\Downloads\Django project\venv\Lib\site-packages\django\utils\deprecation.py", line 131, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Shyam\Downloads\Django project\venv\Lib\site-packages\django\middleware\common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Shyam\Downloads\Django project\venv\Lib\site-packages\django\middleware\common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via PUT, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining PUT data. Change your form to point to 127.0.0.1:8000/api/inventory/items/14/update/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2024-10-17 20:30:56,003 basehttp "PUT /api/inventory/items/14/update HTTP/1.1" 500 68770
+WARNING 2024-10-17 20:31:23,002 log Not Found: /api/inventory/items/14/update/
+WARNING 2024-10-17 20:31:23,010 basehttp "PATCH /api/inventory/items/14/update/ HTTP/1.1" 404 54
+WARNING 2024-10-17 20:31:29,797 log Not Found: /api/inventory/items/10/update/
+WARNING 2024-10-17 20:31:29,813 basehttp "PATCH /api/inventory/items/10/update/ HTTP/1.1" 404 54
+WARNING 2024-10-17 20:31:35,501 log Not Found: /api/inventory/items/11/update/
+WARNING 2024-10-17 20:31:35,502 basehttp "PATCH /api/inventory/items/11/update/ HTTP/1.1" 404 54
+WARNING 2024-10-17 20:31:53,146 log Not Found: /api/inventory/items/11/update/
+WARNING 2024-10-17 20:31:53,147 basehttp "PUT /api/inventory/items/11/update/ HTTP/1.1" 404 54
+INFO 2024-10-17 20:32:03,380 basehttp "GET /admin/inventory_system/inventoryitem/ HTTP/1.1" 200 9317
+INFO 2024-10-17 20:32:03,402 basehttp "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2024-10-17 20:32:03,402 basehttp "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2024-10-17 20:32:03,404 basehttp "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+INFO 2024-10-17 20:32:03,404 basehttp "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2024-10-17 20:32:03,406 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2024-10-17 20:32:03,408 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2024-10-17 20:32:03,408 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+INFO 2024-10-17 20:32:03,408 basehttp "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+INFO 2024-10-17 20:32:03,413 basehttp "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+INFO 2024-10-17 20:32:03,413 basehttp "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+INFO 2024-10-17 20:32:03,413 basehttp "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+INFO 2024-10-17 20:32:03,413 basehttp "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+INFO 2024-10-17 20:32:03,417 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+INFO 2024-10-17 20:32:03,417 basehttp "GET /static/admin/js/core.js HTTP/1.1" 304 0
+INFO 2024-10-17 20:32:03,425 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO 2024-10-17 20:32:03,430 basehttp "GET /static/admin/js/filters.js HTTP/1.1" 304 0
+INFO 2024-10-17 20:32:03,523 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-10-17 20:32:03,570 basehttp "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+INFO 2024-10-17 20:32:03,570 basehttp "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+INFO 2024-10-17 20:32:06,344 basehttp "GET /admin/inventory_system/inventoryitem/9/change/ HTTP/1.1" 200 10323
+INFO 2024-10-17 20:32:06,366 basehttp "GET /static/admin/css/forms.css HTTP/1.1" 304 0
+INFO 2024-10-17 20:32:06,367 basehttp "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+INFO 2024-10-17 20:32:06,373 basehttp "GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+INFO 2024-10-17 20:32:06,373 basehttp "GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+INFO 2024-10-17 20:32:06,464 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-10-17 20:32:18,020 inventory_item Updated inventory item: Item4
+INFO 2024-10-17 20:32:18,022 basehttp "PATCH /api/inventory/items/9/update/ HTTP/1.1" 200 71
+WARNING 2024-10-17 20:32:56,412 log Not Found: /items/
+WARNING 2024-10-17 20:32:56,412 log Not Found: /items/2/delete/
+WARNING 2024-10-17 20:32:56,427 log Not Found: /items/19/
+WARNING 2024-10-17 20:32:56,427 log Not Found: /items/4/
+WARNING 2024-10-17 20:32:56,427 log Not Found: /items/5/update/
+WARNING 2024-10-17 20:34:04,379 log Bad Request: /api/inventory/items/9/update/
+WARNING 2024-10-17 20:34:04,379 basehttp "PATCH /api/inventory/items/9/update/ HTTP/1.1" 400 108
+INFO 2024-10-17 20:34:23,322 inventory_item Updated inventory item: Item4
+INFO 2024-10-17 20:34:23,323 basehttp "PATCH /api/inventory/items/9/update/ HTTP/1.1" 200 71
+INFO 2024-10-17 20:34:26,879 inventory_item Updated inventory item: Item4
+INFO 2024-10-17 20:34:26,881 basehttp "PATCH /api/inventory/items/9/update/ HTTP/1.1" 200 71
+WARNING 2024-10-17 20:34:53,669 log Not Found: /items/
+WARNING 2024-10-17 20:34:53,684 log Not Found: /items/2/delete/
+WARNING 2024-10-17 20:34:53,684 log Not Found: /items/19/
+WARNING 2024-10-17 20:34:53,684 log Not Found: /items/4/
+WARNING 2024-10-17 20:34:53,684 log Not Found: /items/5/update/
+WARNING 2024-10-17 20:36:49,925 log Not Found: /items/
+WARNING 2024-10-17 20:36:49,925 log Not Found: /items/2/delete/
+WARNING 2024-10-17 20:36:49,941 log Not Found: /items/19/
+WARNING 2024-10-17 20:36:49,941 log Not Found: /items/4/
+WARNING 2024-10-17 20:36:49,941 log Unauthorized: /api/inventory/items/5/update/
+WARNING 2024-10-17 20:38:40,744 log Unauthorized: /api/inventory/items/
+WARNING 2024-10-17 20:38:40,763 log Unauthorized: /api/inventory/items/2/delete/
+WARNING 2024-10-17 20:38:40,763 log Unauthorized: /api/inventory/items/999/
+WARNING 2024-10-17 20:38:40,763 log Unauthorized: /api/inventory/items/4/
+WARNING 2024-10-17 20:38:40,775 log Unauthorized: /api/inventory/items/5/update/
+WARNING 2024-10-17 20:40:58,879 log Unauthorized: /api/inventory/items/
+WARNING 2024-10-17 20:40:59,952 log Unauthorized: /api/inventory/items/2/delete/
+WARNING 2024-10-17 20:41:01,012 log Unauthorized: /api/inventory/items/999/
+WARNING 2024-10-17 20:41:02,100 log Unauthorized: /api/inventory/items/4/
+WARNING 2024-10-17 20:41:03,125 log Unauthorized: /api/inventory/items/5/update/
+ERROR 2024-10-17 20:43:28,955 inventory_item Failed to create inventory item: {'name': [ErrorDetail(string='inventory item with this name already exists.', code='unique')]}
+WARNING 2024-10-17 20:43:28,955 log Bad Request: /api/inventory/items/
+INFO 2024-10-17 20:43:29,741 inventory_item Deleted inventory item: Test Item
+WARNING 2024-10-17 20:43:30,411 log Not Found: /api/inventory/items/999/
+INFO 2024-10-17 20:43:31,064 inventory_item Retrieved inventory item: Test Item
+INFO 2024-10-17 20:43:31,727 inventory_item Updated inventory item: Updated Item
+INFO 2024-10-17 20:44:22,151 inventory_item Created inventory item: Test Item 1
+INFO 2024-10-17 20:44:22,863 inventory_item Deleted inventory item: Test Item
+WARNING 2024-10-17 20:44:23,585 log Not Found: /api/inventory/items/999/
+INFO 2024-10-17 20:44:24,276 inventory_item Retrieved inventory item from cache: Updated Item
+INFO 2024-10-17 20:44:24,959 inventory_item Updated inventory item: Updated Item
+INFO 2024-10-17 20:46:30,729 inventory_item Created inventory item: Test Item 1
+INFO 2024-10-17 20:46:31,375 inventory_item Deleted inventory item: Test Item
+WARNING 2024-10-17 20:46:32,019 log Not Found: /api/inventory/items/999/
+INFO 2024-10-17 20:46:32,672 inventory_item Retrieved inventory item from cache: Updated Item
+INFO 2024-10-17 20:46:33,324 inventory_item Updated inventory item: Updated Item
+INFO 2024-10-17 20:58:13,572 inventory_item Created inventory item: Test Item 1
+INFO 2024-10-17 20:58:14,220 inventory_item Deleted inventory item: Test Item
+WARNING 2024-10-17 20:58:14,869 log Not Found: /api/inventory/items/999/
+INFO 2024-10-17 20:58:15,486 inventory_item Retrieved inventory item: Test Item
+INFO 2024-10-17 20:58:16,126 inventory_item Updated inventory item: Updated Item
+WARNING 2024-10-17 20:58:16,515 log Bad Request: /api/inventory/register/
+WARNING 2024-10-17 20:58:16,531 log Bad Request: /api/inventory/register/
