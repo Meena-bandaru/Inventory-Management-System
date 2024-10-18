@@ -10,7 +10,6 @@ class UserRegistrationView(generics.CreateAPIView):
     serializer_class = UserSerializer
     permission_classes = (AllowAny,)
 
-# Create a subclass of TokenObtainPairView for custom behavior if needed
+
 class CustomTokenObtainPairView(TokenObtainPairView):
-    # Optionally override methods to customize the response
     pass

@@ -360,3 +360,137 @@ INFO 2024-10-17 20:58:15,486 inventory_item Retrieved inventory item: Test Item
 INFO 2024-10-17 20:58:16,126 inventory_item Updated inventory item: Updated Item
 WARNING 2024-10-17 20:58:16,515 log Bad Request: /api/inventory/register/
 WARNING 2024-10-17 20:58:16,531 log Bad Request: /api/inventory/register/
+INFO 2024-10-18 08:15:05,899 autoreload Watching for file changes with StatReloader
+WARNING 2024-10-18 08:15:11,240 log Not Found: /
+WARNING 2024-10-18 08:15:11,241 basehttp "GET / HTTP/1.1" 404 2335
+INFO 2024-10-18 08:15:34,189 basehttp "GET /admin/inventory_system/inventoryitem/9/change/ HTTP/1.1" 200 10323
+INFO 2024-10-18 08:15:34,219 basehttp "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2024-10-18 08:15:34,219 basehttp "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2024-10-18 08:15:34,221 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2024-10-18 08:15:34,228 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+INFO 2024-10-18 08:15:34,230 basehttp "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+INFO 2024-10-18 08:15:34,232 basehttp "GET /static/admin/js/core.js HTTP/1.1" 304 0
+INFO 2024-10-18 08:15:34,236 basehttp "GET /static/admin/css/forms.css HTTP/1.1" 304 0
+INFO 2024-10-18 08:15:34,238 basehttp "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+INFO 2024-10-18 08:15:34,242 basehttp "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+INFO 2024-10-18 08:15:34,243 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2024-10-18 08:15:34,244 basehttp "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2024-10-18 08:15:34,246 basehttp "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+INFO 2024-10-18 08:15:34,248 basehttp "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+INFO 2024-10-18 08:15:34,250 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+INFO 2024-10-18 08:15:34,250 basehttp "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+INFO 2024-10-18 08:15:34,254 basehttp "GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+INFO 2024-10-18 08:15:34,260 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO 2024-10-18 08:15:34,264 basehttp "GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+INFO 2024-10-18 08:15:34,370 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-10-18 08:15:34,432 basehttp "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+INFO 2024-10-18 08:15:39,421 basehttp "GET /admin/inventory_system/inventoryitem/9/change/ HTTP/1.1" 200 10323
+INFO 2024-10-18 08:15:39,565 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+WARNING 2024-10-18 08:15:52,129 log Not Found: /
+WARNING 2024-10-18 08:15:52,129 basehttp "GET / HTTP/1.1" 404 2335
+INFO 2024-10-18 08:15:59,923 basehttp "GET /admin/ HTTP/1.1" 200 8414
+INFO 2024-10-18 08:15:59,955 basehttp "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+INFO 2024-10-18 08:15:59,969 basehttp "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+INFO 2024-10-18 08:16:00,040 basehttp "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 200 392
+INFO 2024-10-18 08:16:19,887 basehttp "POST /admin/logout/ HTTP/1.1" 200 3555
+INFO 2024-10-18 08:16:22,547 basehttp "GET /admin/ HTTP/1.1" 302 0
+INFO 2024-10-18 08:16:22,571 basehttp "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4160
+INFO 2024-10-18 08:16:22,586 basehttp "GET /static/admin/css/login.css HTTP/1.1" 304 0
+INFO 2024-10-18 08:16:25,829 basehttp "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2024-10-18 08:16:25,971 basehttp "GET /admin/ HTTP/1.1" 200 8414
+INFO 2024-10-18 08:16:28,496 basehttp "GET /admin/inventory_system/inventoryitem/ HTTP/1.1" 200 9317
+INFO 2024-10-18 08:16:28,538 basehttp "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+INFO 2024-10-18 08:16:28,552 basehttp "GET /static/admin/js/filters.js HTTP/1.1" 304 0
+INFO 2024-10-18 08:16:28,670 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-10-18 08:16:28,711 basehttp "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+INFO 2024-10-18 08:16:33,737 basehttp "GET /admin/auth/group/ HTTP/1.1" 200 8255
+INFO 2024-10-18 08:16:33,763 basehttp "GET /static/admin/img/search.svg HTTP/1.1" 304 0
+INFO 2024-10-18 08:16:34,002 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-10-18 08:16:35,986 basehttp "GET /admin/auth/user/ HTTP/1.1" 200 11820
+INFO 2024-10-18 08:16:36,014 basehttp "GET /static/admin/img/icon-yes.svg HTTP/1.1" 304 0
+INFO 2024-10-18 08:16:36,140 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-10-18 08:16:36,157 basehttp "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 304 0
+INFO 2024-10-18 08:16:36,157 basehttp "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 304 0
+INFO 2024-10-18 08:16:41,545 basehttp "GET /admin/inventory_system/inventoryitem/ HTTP/1.1" 200 9317
+INFO 2024-10-18 08:16:41,689 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-10-18 08:16:46,776 basehttp "GET /admin/inventory_system/inventoryitem/ HTTP/1.1" 200 9317
+INFO 2024-10-18 08:16:46,931 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+WARNING 2024-10-18 08:16:54,970 log Unauthorized: /api/inventory/items/1/
+WARNING 2024-10-18 08:16:54,970 basehttp "GET /api/inventory/items/1/ HTTP/1.1" 401 5315
+INFO 2024-10-18 08:16:55,006 basehttp "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+INFO 2024-10-18 08:16:55,006 basehttp "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+INFO 2024-10-18 08:16:55,006 basehttp "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+INFO 2024-10-18 08:16:55,006 basehttp "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+INFO 2024-10-18 08:16:55,006 basehttp "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+INFO 2024-10-18 08:16:55,006 basehttp "GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 304 0
+INFO 2024-10-18 08:16:55,019 basehttp "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+INFO 2024-10-18 08:16:55,023 basehttp "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+INFO 2024-10-18 08:16:55,023 basehttp "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+INFO 2024-10-18 08:16:55,024 basehttp "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+INFO 2024-10-18 08:16:55,024 basehttp "GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 304 0
+INFO 2024-10-18 08:16:55,030 basehttp "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+WARNING 2024-10-18 08:17:10,895 log Unauthorized: /api/inventory/items/1/
+WARNING 2024-10-18 08:17:10,895 basehttp "GET /api/inventory/items/1/?format=api HTTP/1.1" 401 5359
+WARNING 2024-10-18 08:17:36,392 log Method Not Allowed: /api/inventory/login/
+WARNING 2024-10-18 08:17:36,392 basehttp "GET /api/inventory/login/ HTTP/1.1" 405 7561
+INFO 2024-10-18 08:17:50,226 basehttp "POST /api/inventory/login/ HTTP/1.1" 200 8005
+INFO 2024-10-18 08:19:11,183 inventory_item Retrieved inventory item: Item4
+INFO 2024-10-18 08:19:11,186 basehttp "GET /api/inventory/items/9/ HTTP/1.1" 200 71
+WARNING 2024-10-18 08:19:32,102 log Unauthorized: /api/inventory/items/9/
+WARNING 2024-10-18 08:19:32,104 basehttp "GET /api/inventory/items/9/ HTTP/1.1" 401 58
+INFO 2024-10-18 08:19:36,672 inventory_item Retrieved inventory item from cache: Item4
+INFO 2024-10-18 08:19:36,674 basehttp "GET /api/inventory/items/9/ HTTP/1.1" 200 71
+INFO 2024-10-18 08:23:03,573 autoreload D:\Django project\Inventory_Management_System\inventory_system\views\user.py changed, reloading.
+INFO 2024-10-18 08:23:04,436 autoreload Watching for file changes with StatReloader
+INFO 2024-10-18 08:25:25,397 autoreload D:\Django project\Inventory_Management_System\inventory_system\urls.py changed, reloading.
+INFO 2024-10-18 08:25:26,228 autoreload Watching for file changes with StatReloader
+WARNING 2024-10-18 08:25:30,351 log Unauthorized: /api/inventory/items/9/
+WARNING 2024-10-18 08:25:30,351 basehttp "GET /api/inventory/items/9/ HTTP/1.1" 401 183
+WARNING 2024-10-18 08:25:39,142 log Not Found: /api/inventory/login/////
+WARNING 2024-10-18 08:25:39,142 basehttp "GET /api/inventory/login///// HTTP/1.1" 404 4265
+WARNING 2024-10-18 08:25:53,410 log Method Not Allowed: /api/inventory/token/refresh/
+WARNING 2024-10-18 08:25:53,410 basehttp "GET /api/inventory/token/refresh/ HTTP/1.1" 405 7362
+WARNING 2024-10-18 08:26:35,835 log Method Not Allowed: /api/inventory/login/
+WARNING 2024-10-18 08:26:35,835 basehttp "GET /api/inventory/login/ HTTP/1.1" 405 7561
+INFO 2024-10-18 08:26:45,817 basehttp "POST /api/inventory/login/ HTTP/1.1" 200 8005
+INFO 2024-10-18 08:27:44,455 inventory_item Retrieved inventory item: Item4
+INFO 2024-10-18 08:27:44,457 basehttp "GET /api/inventory/items/9/ HTTP/1.1" 200 71
+INFO 2024-10-18 08:30:11,144 inventory_item Created inventory item: Item20
+INFO 2024-10-18 08:30:11,146 basehttp "POST /api/inventory/items/ HTTP/1.1" 201 74
+INFO 2024-10-18 08:30:41,881 inventory_item Created inventory item: Item21
+INFO 2024-10-18 08:30:41,883 basehttp "POST /api/inventory/items/ HTTP/1.1" 201 74
+INFO 2024-10-18 08:30:51,177 inventory_item Created inventory item: Item22
+INFO 2024-10-18 08:30:51,178 basehttp "POST /api/inventory/items/ HTTP/1.1" 201 74
+INFO 2024-10-18 08:31:02,503 inventory_item Created inventory item: Item23
+INFO 2024-10-18 08:31:02,505 basehttp "POST /api/inventory/items/ HTTP/1.1" 201 74
+INFO 2024-10-18 08:31:15,940 inventory_item Created inventory item: Item24
+INFO 2024-10-18 08:31:15,941 basehttp "POST /api/inventory/items/ HTTP/1.1" 201 74
+INFO 2024-10-18 08:31:34,375 inventory_item Created inventory item: Item25
+INFO 2024-10-18 08:31:34,376 basehttp "POST /api/inventory/items/ HTTP/1.1" 201 74
+ERROR 2024-10-18 08:33:40,800 log Internal Server Error: /api/inventory/items/13/update
+Traceback (most recent call last):
+  File "C:\Users\Shyam\Downloads\Django project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Shyam\Downloads\Django project\venv\Lib\site-packages\django\utils\deprecation.py", line 131, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Shyam\Downloads\Django project\venv\Lib\site-packages\django\middleware\common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Shyam\Downloads\Django project\venv\Lib\site-packages\django\middleware\common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via PUT, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining PUT data. Change your form to point to 127.0.0.1:8000/api/inventory/items/13/update/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2024-10-18 08:33:40,800 basehttp "PUT /api/inventory/items/13/update HTTP/1.1" 500 68770
+WARNING 2024-10-18 08:33:59,641 log Unauthorized: /api/inventory/items/13/update/
+WARNING 2024-10-18 08:33:59,641 basehttp "PUT /api/inventory/items/13/update/ HTTP/1.1" 401 183
+INFO 2024-10-18 08:34:25,983 basehttp "POST /api/inventory/token/refresh/ HTTP/1.1" 200 7538
+INFO 2024-10-18 08:34:47,341 inventory_item Updated inventory item: Item26
+INFO 2024-10-18 08:34:47,342 basehttp "PUT /api/inventory/items/13/update/ HTTP/1.1" 200 74
+INFO 2024-10-18 08:35:59,279 inventory_item Created inventory item: Test Item 1
+INFO 2024-10-18 08:36:00,554 inventory_item Deleted inventory item: Test Item
+WARNING 2024-10-18 08:36:01,819 log Not Found: /api/inventory/items/999/
+INFO 2024-10-18 08:36:03,021 inventory_item Retrieved inventory item: Test Item
+INFO 2024-10-18 08:36:04,276 inventory_item Updated inventory item: Updated Item
+WARNING 2024-10-18 08:36:05,052 log Bad Request: /api/inventory/register/
+WARNING 2024-10-18 08:36:05,052 log Bad Request: /api/inventory/register/

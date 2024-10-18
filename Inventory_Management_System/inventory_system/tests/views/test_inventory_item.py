@@ -32,7 +32,7 @@ class TestInventoryItemView(APITestCase):
         self.item = InventoryItem.objects.create(**self.item_data)
 
     def test_create_inventory_item(self):
-        # Using reverse to resolve the correct path for the create item endpoint
+
         url = reverse('create-item')
         item_data = {
             "name": "Test Item 1",
@@ -41,10 +41,9 @@ class TestInventoryItemView(APITestCase):
         }
         response = self.client.post(url, item_data, format='json')
         self.assertEqual(response.status_code, status.HTTP_201_CREATED)
-        self.assertEqual(InventoryItem.objects.count(), 2)  # Since setUp creates one item already
+        self.assertEqual(InventoryItem.objects.count(), 2)
 
     def test_retrieve_inventory_item(self):
-        # Using reverse to resolve the correct path for the retrieve item endpoint
         url = reverse('retrieve-item', args=[self.item.id])
         response = self.client.get(url)
         self.assertEqual(response.status_code, status.HTTP_200_OK)
@@ -53,7 +52,7 @@ class TestInventoryItemView(APITestCase):
         updated_data = {"name": "Updated Item"}
         # Using reverse to resolve the correct path for the update item endpoint
         url = reverse('update-item', args=[self.item.id])
-        response = self.client.patch(url, updated_data, format='json')
+        response = self.client.put(url, updated_data, format='json')
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.item.refresh_from_db()
         self.assertEqual(self.item.name, "Updated Item")
